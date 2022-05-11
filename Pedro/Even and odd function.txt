@@ -1,0 +1,20 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+//Una función que reciba un número y la función me regresará si es 1 si es par o un si es impar.
+int paroimpar(int i);
+int num = 5;
+
+int main(){
+    paroimpar(num);
+    
+    printf("%d", paroimpar(num));
+}
+
+int paroimpar(i){
+    if(i%2 == 0){
+        return 1;
+    }
+    else{
+        return 0;
+    }
+}
