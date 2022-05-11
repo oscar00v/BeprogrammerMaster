@@ -1,0 +1,37 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#define SizeofArray 5
+#define SizeofArrayavarage 8
+int ArrayVar[SizeofArray] = {0,1,2,3,4};
+float Arraysum = 0;
+
+int AvarageFunction(int Arrayreciver[]);
+
+int AvarageFunction(int Arrayreciver[]){
+    
+    for(int i=0; i<SizeofArrayavarage;i++){
+       Arraysum +=  Arrayreciver[i];
+       printf("Arraysum = %f \n",Arraysum);
+    }
+    printf("El promedio del arreglo es %f \n", (Arraysum/SizeofArrayavarage));
+}
+
+int main() {
+    
+    int AvarageArray[SizeofArrayavarage] = {90,90,90,85,70,41,62,61};
+    
+    printf("Hello world\n");
+    
+    printf("%d\n",ArrayVar[0]);
+    ArrayVar[0] = 1;
+    printf("%d\n",ArrayVar[0]);
+    
+    for (int i=0; i<SizeofArray; i++){
+        printf("%d\n",ArrayVar[i]);
+    }
+    
+    
+    AvarageFunction(AvarageArray);
+    
+   return 0; 
+}
