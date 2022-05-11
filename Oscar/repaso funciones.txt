@@ -1,0 +1,36 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+ 
+int Sum(int VarA, int VarB);
+int recurcive(int RecurciveVar);
+int VarSuma;
+
+ 
+Sum(VarA, VarB){
+    VarSuma = VarA + VarB;
+    
+    return VarSuma;
+}
+
+
+recurcive(RecurciveVar){
+    if (RecurciveVar != 0)
+        // sum() function calls itself
+        return RecurciveVar + recurcive(RecurciveVar-1); 
+    else
+        return RecurciveVar;
+}
+
+
+ 
+int main() {
+int VartosumA = 10;
+int VartosumB = 11;
+int Vartorecurcive = 3;
+
+printf("%d\n",Sum(VartosumA, VartosumB));
+
+printf("%d", recurcive(Vartorecurcive));
+
+
+}
