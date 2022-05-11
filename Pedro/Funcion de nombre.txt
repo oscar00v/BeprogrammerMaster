@@ -1,0 +1,18 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+void bienvenida(char nom[]);
+char nombre[30];
+
+int main() {
+    printf("Ingrese si nombre:?\n");
+    scanf("%s", nombre);
+    bienvenida(nombre);
+    //Después de finalizar la función de bienvenida el código 
+    //regresa a main para terminar la función principal.
+}
+
+void bienvenida(char nomb[])
+{
+    printf("\n hola %s Bienvenido (a) al Leguaje C", nomb);
+
+}
