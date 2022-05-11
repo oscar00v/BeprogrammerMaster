@@ -1,0 +1,24 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int suma(int X, int Y);
+    int sumat;
+
+int main(){
+    int num_1;
+    int num_2;
+    printf("Ingresa el primer numero \n");
+    scanf("%d",&num_1); //Se manda a llamar el valor del espacio de memoria
+    printf("Ingresa el segundo numero\n");
+    scanf("%d",&num_2); //Se manda a llamar el valor del espacio de memoria
+    
+    suma(num_1,num_2); //Indicas la relación de la variables en función.
+    printf("El resultado es: %d\n", suma(num_1,num_2));
+	//No olvides el %d que es el indicador de donde se quiere
+		//mostrar el dato.
+}
+
+int suma(X,Y){
+    sumat = X + Y;
+    
+    return sumat;
+}   
