@@ -1,0 +1,17 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+//Función que reciba dos números y hacer un cambio.
+int cambio(int *a, int *b);
+
+int main() {
+    int a=1, b=2;
+    cambio(&a,&b);
+}
+
+int cambio(int *a, int *b){
+    int c;
+    c = *b;
+    *b = *a;
+    *a = c;
+    return printf("%d" "%d", *a, *b);
+}
