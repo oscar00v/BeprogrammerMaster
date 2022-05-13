@@ -1,0 +1,22 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+#define size_of_array 8
+int bubble_sort();
+int array[size_of_array] = {100,200,333,2,8,12,500,1};
+int i, j, k, var;
+
+int main(){
+    for(k=0;k<size_of_array;k++){
+    bubble_sort();
+    }
+}
+
+int bubble_sort(){
+    for(i=0; i<size_of_array; i++){
+        for(j=0; j<size_of_array-1; j++){
+            (array[j]>array[j+1])?(var = array[j+1],array[j+1] = array[j],array[j] = var):(array[j]=array[j]);
+            }
+        }
+    return printf("%d\n", array[k]);
+}
