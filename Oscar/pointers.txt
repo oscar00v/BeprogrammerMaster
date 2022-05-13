@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main()
+{
+  int var = 5;
+  int c;
+  int* pointer;
+  //int *pointer;
+  //int * pointer;
+  printf("var: %d\n", var);
+  pointer = &var;
+  // Notice the use of & before var
+  printf("address of var: %p\n", &var);
+  printf("var pointer:%d\n", *pointer);
+  
+  c = 5;
+  pointer = &c;
+  c = 1;
+  printf("%d\n", c);
+  printf("%d\n", *pointer); 
+  
+  
+  
+  
+  
+  return 0;
+}
