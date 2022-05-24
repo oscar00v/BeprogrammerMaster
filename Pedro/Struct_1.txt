@@ -1,0 +1,23 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <string.h>
+
+struct Data_name{
+    char Name[50];
+    int grado;
+//    bool sexo;
+    char Carrera[50];
+};
+
+int main() {
+    struct Data_name Student1;
+    struct Data_name Student2;
+    
+    strcpy(Student1.Name, "Pedro");
+    strcpy(Student2.Name, "Oscar");
+    
+    printf("Name is: %s\n", Student1.Name);
+    printf("Name is: %s\n", Student2.Name);
+    
+    return 0;
+}
